@@ -11,6 +11,7 @@ from allauth.socialaccount.providers.bitbucket_oauth2.views import (
     BitbucketOAuth2Adapter)
 
 from readthedocs.builds import utils as build_utils
+from readthedocs.integrations.models import Integration
 
 from ..models import RemoteOrganization, RemoteRepository
 from .base import Service
@@ -190,7 +191,7 @@ class BitbucketService(Service):
             'events': ['repo:push'],
         })
 
-    def setup_webhook(self, project, integration=None):
+    def setup_webhook(self, project):
         """Set up Bitbucket project webhook for project
 
         :param project: project to set up webhook for
