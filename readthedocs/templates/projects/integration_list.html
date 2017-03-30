@@ -17,7 +17,7 @@
       {% for integration in object_list %}
         <li class="module-item">
           <a href="{% url 'projects_integrations_detail' project_slug=project.slug integration_pk=integration.pk %}">
-            {{ integration }}
+            {{ integration.get_integration_type_display }}
           </a>
         </li>
       {% empty %}

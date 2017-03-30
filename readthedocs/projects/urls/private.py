@@ -2,6 +2,7 @@
 
 from django.conf.urls import url
 
+from readthedocs.constants import pattern_opts
 from readthedocs.projects.views import private
 from readthedocs.projects.views.private import (
     ProjectDashboard, ImportView,
@@ -129,16 +130,26 @@ domain_urls = [
 urlpatterns += domain_urls
 
 integration_urls = [
-    url(r'^(?P<project_slug>[-\w]+)/integrations/$',
+    url(r'^(?P<project_slug>{project_slug})/integrations/$'.format(**pattern_opts),
         IntegrationList.as_view(),
         name='projects_integrations'),
-    url(r'^(?P<project_slug>[-\w]+)/integrations/(?P<integration_pk>[-\w]+)/$',
+    url(r'^(?P<project_slug>{project_slug})/integrations/sync/$'.format(**pattern_opts),
+        IntegrationWebhookSync.as_view(),
+        name='projects_integrations_webhooks_sync'),
+    url((r'^(?P<project_slug>{project_slug})/'
+         r'integrations/(?P<integration_pk>{integer_pk})/$'
+         .format(**pattern_opts)),
         IntegrationDetail.as_view(),
         name='projects_integrations_detail'),
-    url(r'^(?P<project_slug>[-\w]+)/integrations/(?P<integration_pk>[-\w]+)/exchange/(?P<exchange_pk>[-\w]+)/$',
+    url((r'^(?P<project_slug>{project_slug})/'
+         r'integrations/(?P<integration_pk>{integer_pk})/'
+         r'exchange/(?P<exchange_pk>[-\w]+)/$'
+         .format(**pattern_opts)),
         IntegrationExchangeDetail.as_view(),
         name='projects_integrations_exchanges_detail'),
-    url(r'^(?P<project_slug>[-\w]+)/integrations/(?P<integration_pk>[-\w]+)/sync/$',
+    url((r'^(?P<project_slug>{project_slug})/'
+         r'integrations/(?P<integration_pk>{integer_pk})/sync/$'
+         .format(**pattern_opts)),
         IntegrationWebhookSync.as_view(),
         name='projects_integrations_webhooks_sync'),
 ]

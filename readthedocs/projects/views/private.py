@@ -37,7 +37,7 @@ from readthedocs.projects.models import Project, EmailHook, WebHook, Domain
 from readthedocs.projects.views.base import ProjectAdminMixin, ProjectSpamMixin
 from readthedocs.projects import constants, tasks
 from readthedocs.oauth.services import registry
-from readthedocs.oauth.utils import attach_webhook
+from readthedocs.oauth.utils import attach_webhook, update_webhook
 
 from readthedocs.core.mixins import LoginRequiredMixin
 from readthedocs.projects.signals import project_import
@@ -711,6 +711,7 @@ class IntegrationDetail(IntegrationMixin, DetailView):
         Integration.GITHUB_WEBHOOK: 'webhook',
         Integration.GITLAB_WEBHOOK: 'webhook',
         Integration.BITBUCKET_WEBHOOK: 'webhook',
+        Integration.API_WEBHOOK: 'webhook',
     }
 
     def get_queryset(self):
@@ -749,7 +750,14 @@ class IntegrationWebhookSync(IntegrationMixin, GenericView):
 
     def post(self, request, *args, **kwargs):
         # pylint: disable=unused-argument
-        attach_webhook(project=self.get_project(), request=request)
+        if 'integration_pk' in kwargs:
+            integration = self.get_integration()
+            update_webhook(self.get_project(), integration, request=request)
+        else:
+            # This is a brute force form of the webhook sync, if a project has a
+            # webhook or a remote repository object, the user should be using
+            # the per-integration sync instead.
+            attach_webhook(project=self.get_project(), request=request)
         return HttpResponseRedirect(self.get_success_url())
 
     def get_success_url(self):
