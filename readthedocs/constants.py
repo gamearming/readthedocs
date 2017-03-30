@@ -7,4 +7,5 @@ pattern_opts = {
     'lang_slug': LANGUAGES_REGEX,
     'version_slug': VERSION_SLUG_REGEX,
     'filename_slug': '(?:.*)',
+    'integer_pk': r'[\d]+',
 }

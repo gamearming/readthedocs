@@ -7,8 +7,8 @@ from readthedocs.projects.views.private import (
     ProjectDashboard, ImportView,
     ProjectUpdate, ProjectAdvancedUpdate,
     DomainList, DomainCreate, DomainDelete, DomainUpdate,
-    IntegrationList, IntegrationExchangeDetail, IntegrationWebhookSync,
-    ProjectAdvertisingUpdate)
+    IntegrationList, IntegrationDetail, IntegrationExchangeDetail,
+    IntegrationWebhookSync, ProjectAdvertisingUpdate)
 from readthedocs.projects.backends.views import ImportWizardView, ImportDemoView
 
 
@@ -132,12 +132,15 @@ integration_urls = [
     url(r'^(?P<project_slug>[-\w]+)/integrations/$',
         IntegrationList.as_view(),
         name='projects_integrations'),
-    url(r'^(?P<project_slug>[-\w]+)/integrations/exchange/(?P<exchange_pk>[-\w]+)/$',
+    url(r'^(?P<project_slug>[-\w]+)/integrations/(?P<integration_pk>[-\w]+)/$',
+        IntegrationDetail.as_view(),
+        name='projects_integrations_detail'),
+    url(r'^(?P<project_slug>[-\w]+)/integrations/(?P<integration_pk>[-\w]+)/exchange/(?P<exchange_pk>[-\w]+)/$',
         IntegrationExchangeDetail.as_view(),
-        name='projects_integrations_exchange_detail'),
-    url(r'^(?P<project_slug>[-\w]+)/integrations/sync/$',
+        name='projects_integrations_exchanges_detail'),
+    url(r'^(?P<project_slug>[-\w]+)/integrations/(?P<integration_pk>[-\w]+)/sync/$',
         IntegrationWebhookSync.as_view(),
-        name='projects_integrations_sync'),
+        name='projects_integrations_webhooks_sync'),
 ]
 
 urlpatterns += integration_urls

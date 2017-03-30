@@ -5,7 +5,7 @@ import uuid
 
 from django.db import models, transaction
 from django.utils.translation import ugettext_lazy as _
-from django.contrib.contenttypes.fields import GenericForeignKey
+from django.contrib.contenttypes.fields import GenericForeignKey, GenericRelation
 from django.contrib.contenttypes.models import ContentType
 from django.utils.safestring import mark_safe
 from rest_framework import status
@@ -14,6 +14,7 @@ from pygments import highlight
 from pygments.lexers import JsonLexer
 from pygments.formatters import HtmlFormatter
 
+from readthedocs.projects.models import Project
 from .utils import normalize_request_payload
 
 
@@ -139,3 +140,36 @@ class HttpExchange(models.Model):
     @property
     def formatted_response_body(self):
         return self.formatted_json('response_body')
+
+
+class Integration(models.Model):
+
+    """Inbound webhook integration for projects"""
+
+    GITHUB_WEBHOOK = 'github_webhook'
+    BITBUCKET_WEBHOOK = 'bitbucket_webhook'
+    GITLAB_WEBHOOK = 'gitlab_webhook'
+    API_WEBHOOK = 'api_webhook'
+
+    INTEGRATIONS = (
+        (GITHUB_WEBHOOK, _('GitHub incoming webhook')),
+        (BITBUCKET_WEBHOOK, _('Bitbucket incoming webhook')),
+        (GITLAB_WEBHOOK, _('GitLab incoming webhook')),
+        (API_WEBHOOK, _('Generic API incoming webhook')),
+    )
+
+    project = models.ForeignKey(Project, related_name='integrations')
+    integration_type = models.CharField(
+        _('Type'),
+        max_length=32,
+        choices=INTEGRATIONS
+    )
+    provider_data = JSONField(_('Provider data'))
+    exchanges = GenericRelation(
+        'HttpExchange',
+        related_query_name='integrations'
+    )
+
+    def __unicode__(self):
+        return (_('{0} for {1}')
+                .format(self.get_integration_type_display(), self.project.name))

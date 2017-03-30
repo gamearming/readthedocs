@@ -12,32 +12,18 @@
 {% block project_edit_content_header %}{% trans "Integrations" %}{% endblock %}
 
 {% block project_edit_content %}
-  <p>
-    Manage external integrations for project webhooks.
-  </p>
-
-  <form method="post" action="{% url 'projects_integrations_sync' project_slug=project.slug %}">
-    {% csrf_token %}
-    <input type="submit" value="{% trans "Resync Webhook" %}">
-  </form>
-
-  <h3>Recent Activity</h3>
-
-  <div class="module-list-wrapper httpexchanges">
+  <div class="module-list-wrapper">
     <ul>
-      {% for exchange in object_list %}
+      {% for integration in object_list %}
         <li class="module-item">
-          <span class="status status-{% if exchange.failed %}fail{% else %}pass{% endif %}">{{ exchange.status_code }}</span>
-          <a href="{% url 'projects_integrations_exchange_detail' exchange_pk=exchange.pk project_slug=project.slug %}">
-            {% blocktrans with date=exchange.date|timesince %}
-              {{ date }} ago
-            {% endblocktrans %}
+          <a href="{% url 'projects_integrations_detail' project_slug=project.slug integration_pk=integration.pk %}">
+            {{ integration }}
           </a>
         </li>
       {% empty %}
         <li class="module-item">
           <span class="quiet">
-            {% trans 'There is no recent activity' %}
+            {% trans 'No intergrations are currently configured' %}
           </span>
         </li>
       {% endfor %}

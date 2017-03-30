@@ -1,0 +1,47 @@
+{% extends "projects/project_edit_base.html" %}
+
+{% load i18n %}
+
+{% block title %}{% trans "Integration" %}{% endblock %}
+
+{% block nav-dashboard %} class="active"{% endblock %}
+
+{% block editing-option-edit-integrations %}class="active"{% endblock %}
+
+{% block project-integrations-active %}active{% endblock %}
+{% block project_edit_content_header %}{% trans "Integration" %}{% endblock %}
+
+{% block project_edit_content %}
+  <p>
+    If this integration is not functioning correctly, you can try to resync the
+    webhook:
+  </p>
+
+  <form method="post" action="{% url 'projects_integrations_webhooks_sync' project_slug=project.slug integration_pk=None %}">
+    {% csrf_token %}
+    <input type="submit" value="{% trans "Resync webhook" %}">
+  </form>
+
+  <h3>Recent Activity</h3>
+
+  <div class="module-list-wrapper httpexchanges">
+    <ul>
+      {% for exchange in integration.exchanges.all %}
+        <li class="module-item">
+          <span class="status status-{% if exchange.failed %}fail{% else %}pass{% endif %}">{{ exchange.status_code }}</span>
+          <a href="{% url 'projects_integrations_exchanges_detail' project_slug=project.slug integration_pk=integration.pk exchange_pk=exchange.pk %}">
+            {% blocktrans with date=exchange.date|timesince %}
+              {{ date }} ago
+            {% endblocktrans %}
+          </a>
+        </li>
+      {% empty %}
+        <li class="module-item">
+          <span class="quiet">
+            {% trans 'There is no recent activity' %}
+          </span>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endblock %}
