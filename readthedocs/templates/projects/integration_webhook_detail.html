@@ -12,15 +12,29 @@
 {% block project_edit_content_header %}{% trans "Integration" %}{% endblock %}
 
 {% block project_edit_content %}
-  <p>
-    If this integration is not functioning correctly, you can try to resync the
-    webhook:
-  </p>
+  {% if integration.has_sync %}
+    {% if integration.can_sync %}
+      <p>
+        {% blocktrans %}
+          This webhook was configured when this project was imported. If this
+          integration is not functioning correctly, try resyncing the webhook:
+        {% endblocktrans %}
+      </p>
 
-  <form method="post" action="{% url 'projects_integrations_webhooks_sync' project_slug=project.slug integration_pk=integration.pk %}">
-    {% csrf_token %}
-    <input type="submit" value="{% trans "Resync webhook" %}">
-  </form>
+      <form method="post" action="{% url 'projects_integrations_webhooks_sync' project_slug=project.slug integration_pk=integration.pk %}">
+        {% csrf_token %}
+        <input type="submit" value="{% trans "Resync webhook" %}">
+      </form>
+    {% else %}
+      <p>
+        {% blocktrans %}
+          This integration was created automatically from an existing webhook
+          configured on your repository. To make any changes to this webhook,
+          you'll need to update the configuration there.
+        {% endblocktrans %}
+      </p>
+    {% endif %}
+  {% endif %}
 
   <h3>Recent Activity</h3>
 

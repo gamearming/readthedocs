@@ -257,7 +257,7 @@ class WebhookView(APIView):
     be.
     """
 
-    MAPPING = {
+    VIEW_MAP = {
         Integration.GITHUB_WEBHOOK: GitHubWebhookView,
         Integration.GITLAB_WEBHOOK: GitLabWebhookView,
         Integration.BITBUCKET_WEBHOOK: BitbucketWebhookView,
@@ -271,6 +271,6 @@ class WebhookView(APIView):
             project__slug=project_slug,
             pk=integration_pk,
         )
-        view_cls = self.MAPPING[integration.integration_type]
+        view_cls = self.VIEW_MAP[integration.integration_type]
         view = view_cls.as_view(integration=integration)
         return view(request, project_slug)
