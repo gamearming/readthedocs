@@ -47,13 +47,23 @@ GitHub 專案快速託管入門
 .. _GitHub: http://github.com/rtfd/readthedocs.org
 .. _貢獻說明: http://docs.readthedocs.io/en/latest/contribute.html#contributing-to-development
 
-.. |build-status| image:: https://img.shields.io/travis/rtfd/readthedocs.org.svg?style=flat
+.. |build-status_en| image:: https://img.shields.io/travis/rtfd/readthedocs.org.svg?style=flat
     :alt: build status
     :scale: 100%
-    :target: https://travis-ci.org/rtfd/readthedocs.org
+    :target: https://travis-ci.org/rtfd/readthedocs.org    
 
-.. |docs| image:: https://readthedocs.org/projects/docs/badge/?version=latest
+.. |docs_en| image:: https://readthedocs.org/projects/docs/badge/?version=latest
     :alt: Documentation Status
     :scale: 100%
     :target: https://docs.readthedocs.io/en/latest/?badge=latest
+    
+.. |build-status| image:: https://img.shields.io/travis/rtfd/readthedocs.org.svg?style=flat
+    :alt: 建立狀態
+    :scale: 100%
+    :target: https://travis-ci.org/rtfd/readthedocs.org    
+    
+.. |docs| image:: https://readthedocs.org/projects/docs/badge/?version=latest
+    :alt: 文件狀態
+    :scale: 100%
+    :target: http://readthedocs-1.readthedocs.io/zh_TW/latest/
 
