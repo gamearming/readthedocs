@@ -3,61 +3,44 @@
 
 |build-status| |docs|
 
-Purpose
+目的
 -------
 
-`Read the Docs`_ hosts documentation for the open source community. It supports
-Sphinx_ docs written with reStructuredText_, and can pull from your Subversion_,
-Bazaar_, Git_, and Mercurial_ repositories.
-Then we build documentation and host it for you.
-Think of it as *Continuous Documentation*.
+`Read the Docs`_ 是託管於 `GitHub`_ 開源專案。它支援使用 reStructuredText_ 編輯的 Sphinx_ 文件，您可以從 Subversion_、 Bazaar_、Git_ 和 Mercurial_ 倉庫中 pull，重新編輯後再交回託管。
+
+您可以在 `GitHub`_ 上取回這個專案進行編修。
+
+RTD 說明
+---------------------
+有關專案設定請請詳閱 `Read the Docs 操作手冊`_ 中的完整說明。
+
+貢獻
+------------
+在 `貢獻說明`_ 中，提供了如何撰寫 `Read the Docs`_ 的詳細資訊。
+
+GitHub 專案快速託管入門
+-------------------------------------
+在快速啟動結束之前，您會有一個測試專案 push 到 GitHub。
+
+#. 請在 `Read the Docs`_ 網站註冊您的帳號後，在七天之內登入到您的信箱，找到驗證信件點擊驗証連結確認您的信箱正確，即完成註冊。
+#. 登入 `Read the Docs`_ 網站後點擊 "Import"。
+#. 填寫專案的名稱及您在 GitHub 專案倉庫的 HTTPS 連結並選擇 Git 作為倉庫類型。
+#. 根據表格內容填寫的其它部分後，點擊 "Create]"。
+#. 在 GitHub 倉庫導覽列上，點擊 "Settings"。
+#. 在側欄中，點擊 "[Web Hooks & Services]"，然後找到 "ReadTheDocs" 點擊服務。
+#. 檢查 "Active" 設定，然後 點擊 "Update Settings"。
+#. 完成以上操作後， commit 您的專案，以後只要您有編修將會自動更新。
 
 .. _Read the docs: http://readthedocs.org/
+.. _Read the Docs 操作手冊: https://docs.readthedocs.io/
 .. _Sphinx: http://sphinx.pocoo.org/
 .. _reStructuredText: http://sphinx.pocoo.org/rest.html
 .. _Subversion: http://subversion.tigris.org/
 .. _Bazaar: http://bazaar.canonical.com/
 .. _Git: http://git-scm.com/
 .. _Mercurial: https://www.mercurial-scm.org/
-
-Documentation for RTD
----------------------
-
-You will find complete documentation for setting up your project at `the Read
-the Docs site`_.
-
-.. _the Read the Docs site: https://docs.readthedocs.io/
-
-Contributing
-------------
-
-You can find information about contributing to Read the Docs at our `Contribution page <http://docs.readthedocs.io/en/latest/contribute.html#contributing-to-development>`_
-
-Quickstart for GitHub-Hosted Projects
--------------------------------------
-
-By the end of this quickstart, you will have a new project automatically updated
-when you push to GitHub.
-
-#. Create an account on `Read the Docs`_.  You will get an email verifying your
-   email address which you should accept within 7 days.
-
-#. Log in and click on "Import".
-
-#. Give your project a name, add the HTTPS link for your GitHub project, and
-   select Git as your repository type.
-
-#. Fill in the rest of the form as needed and click "Create".
-
-#. On GitHub, navigate to your repository and click on "Settings".
-
-#. In the sidebar, click on "Web Hooks & Services", then find and click on the
-   "ReadTheDocs" service.
-
-#. Check the "Active" setting and click "Update Settings".
-
-#. All done.  Commit away and your project will auto-update.
-
+.. _GitHub: http://github.com/rtfd/readthedocs.org
+.. _貢獻說明: http://docs.readthedocs.io/en/latest/contribute.html#contributing-to-development
 
 .. |build-status| image:: https://img.shields.io/travis/rtfd/readthedocs.org.svg?style=flat
     :alt: build status
