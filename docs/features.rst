@@ -1,9 +1,11 @@
-Read the Docs features
+`Read the Docs`_ 功能
 ======================
 
 This will serve as a list of all of the features that Read the Docs currently has. Some features are important enough to have their own page in the docs, others will simply be listed here.
+本文件將作為 Read the Docs 所有功能清單。
+在文件管理中大多數都必須擁有自己說明頁面，其它功能可能在此列出作為連結頁面。
 
-GitHub and Bitbucket Integration
+整合 `GitHub`_ 和 `Bitbucket`_ 版本管理器
 --------------------------------
 
 We now support linking by default in the sidebar. It links to the page on your host, which should help people quickly update typos and send pull requests to contribute to project documentation.
@@ -67,3 +69,5 @@ Alternate Domains
 
 We provide support for CNAMEs, subdomains, and a shorturl for your project as well. This is outlined in the :doc:`alternate_domains` section.
 
+.. _GitHub: http://github.com/rtfd/readthedocs.org
+.. _bitbucket: https://bitbucket.org/
