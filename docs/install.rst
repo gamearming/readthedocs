@@ -1,6 +1,6 @@
 .. _installing-read-the-docs:
 
-Installation
+安裝
 =============
 
 Here is a step by step plan on how to install Read the Docs.
@@ -22,7 +22,7 @@ need to install Python 3 with virtualenv in your system as well.
 .. _Redis: https://redis.io/
 
 
-.. note::
+.. 備註::
 
     If you are having trouble on OS X Mavericks (or possibly other versions of
     OS X) with building ``lxml``, you probably might need to use Homebrew_
