@@ -1,8 +1,8 @@
 歡迎來到 Read The Docs
 ========================
-託管於開源社區的 `Read the Docs`_。它支援使用 reStructuredText_ 編輯的 Sphinx_ 文件，您可以從 Subversion_、 Bazaar_、Git_ 和 Mercurial_ 倉庫中 pull，重新編輯後再交回託管，將其視為持續文件。
+`Read the Docs`_ 是託管於 `GitHub`_ 開源專案。它支援使用 reStructuredText_ 編輯的 Sphinx_ 文件，您可以從 Subversion_、 Bazaar_、Git_ 和 Mercurial_ 倉庫中 pull，重新編輯後再交回託管。
 
-這是可以使用在 `GitHub`_ 上開源的程式碼。
+您使用在 `GitHub`_ 上取回任何開源的程式碼。
 
 .. _Read the docs: http://readthedocs.org/
 .. _Sphinx: http://sphinx.pocoo.org/
@@ -30,7 +30,7 @@
 
 .. toctree::
    :maxdepth: 2
-   :caption: 使用者文件
+   :caption: 使用說明
    
    getting_started
    versions
@@ -64,7 +64,7 @@
 .. toctree::
    :maxdepth: 2
    :glob:
-   :caption: 功能文件
+   :caption: 功能說明
 
    webhooks
    badges
@@ -85,7 +85,7 @@
 
 .. toctree::
    :maxdepth: 2
-   :caption: Developer Documentation
+   :caption: 開發人員參考手冊
 
    install
    api/index
@@ -104,15 +104,15 @@
 
 .. toctree::
    :maxdepth: 2
-   :caption: Business Documentation
-
+   :caption: 商務文件
+   
    business/index
 
 .. _custom-docs:
 
 .. toctree::
    :maxdepth: 2
-   :caption: Custom Install Documentation
+   :caption: 自訂安裝文件
 
    custom_installs/index
 
@@ -120,7 +120,7 @@
 
 .. toctree::
    :maxdepth: 2
-   :caption: Designer Documentation
+   :caption: 設計師文件
 
    design
    theme
