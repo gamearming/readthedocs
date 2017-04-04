@@ -65,5 +65,6 @@ GitHub 專案快速託管入門
 .. |docs| image:: https://readthedocs.org/projects/docs/badge/?version=latest
     :alt: 文件狀態
     :scale: 100%
-    :target: http://readthedocs-1.readthedocs.io/zh_TW/latest/
+    :target: http://readthedocs-1.readthedocs.io/zh_TW/latest/?badge=latest
+             
 
