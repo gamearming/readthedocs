@@ -2,7 +2,7 @@
 ========================
 `Read the Docs`_ 是託管於 `GitHub`_ 開源專案。它支援使用 reStructuredText_ 編輯的 Sphinx_ 文件，您可以從 Subversion_、 Bazaar_、Git_ 和 Mercurial_ 倉庫中 pull，重新編輯後再交回託管。
 
-您使用在 `GitHub`_ 上取回任何開源的程式碼。
+您可以在 `GitHub`_ 上取回這個專案進行編修。
 
 .. _Read the docs: http://readthedocs.org/
 .. _Sphinx: http://sphinx.pocoo.org/
