@@ -22,8 +22,8 @@ GitHub 專案快速託管入門
 -------------------------------------
 在快速啟動結束之前，您會有一個測試專案 push 到 GitHub。
 
-#. 請在 `Read the Docs`_ 網站註冊您的帳號後，在七天之內登入到您的信箱，找到驗證信件點擊驗証連結確認您的信箱正確，即完成註冊。
-#. 登入 `Read the Docs`_ 網站後點擊 "Import"。
+#. 請在 `Read the Docs 註冊會員`_ 頁面註冊您的帳號後，在七天之內登入到您的信箱，找到驗證信件點擊驗証連結確認您的信箱正確，即完成註冊。
+#. 登入 `Read the Docs 專案管理`_ 頁面後點擊 "Import a Project"。
 #. 填寫專案的名稱及您在 GitHub 專案倉庫的 HTTPS 連結並選擇 Git 作為倉庫類型。
 #. 根據表格內容填寫的其它部分後，點擊 "Create]"。
 #. 在 GitHub 倉庫導覽列上，點擊 "Settings"。
@@ -32,6 +32,8 @@ GitHub 專案快速託管入門
 #. 完成以上操作後， commit 您的專案，以後只要您有編修將會自動更新。
 
 .. _Read the docs: http://readthedocs.org/
+.. _Read the Docs 註冊會員: https://readthedocs.org/accounts/signup/
+.. _Read the Docs 專案管理: https://readthedocs.org/dashboard/
 .. _Read the Docs 操作手冊: https://docs.readthedocs.io/
 .. _Sphinx: http://sphinx.pocoo.org/
 .. _reStructuredText: http://sphinx.pocoo.org/rest.html
