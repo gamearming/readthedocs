@@ -1,5 +1,6 @@
 Welcome to Read The Docs
 ========================
+託管於開源社區的 `Read the Docs`_。它支援使用 reStructuredText_ 編輯的 Sphinx_ 文件，您可以從 Subversion_、 Bazaar_、Git_ 和 Mercurial_ 倉庫中 pull，重新編輯後再交回託管，將其視為持續文件。
 
 `Read the Docs`_ hosts documentation for the open source community.
 We support Sphinx_ docs written with reStructuredText_ and `CommonMark`_.
