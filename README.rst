@@ -24,10 +24,11 @@ GitHub 專案快速託管入門
 
 #. 請在 `Read the Docs 註冊會員`_ 頁面註冊您的帳號後，在七天之內登入到您的信箱，找到驗證信件點擊驗証連結確認您的信箱正確，即完成註冊。
 #. 登入 `Read the Docs 專案管理`_ 頁面後點擊 "Import a Project"。
+#. Import a Repository 頁面中會有 GitHub 倉庫清單及 "Import Manually" 按鈕，點擊倉庫中的專案選項或 "Import Manually"。
 #. 填寫專案的名稱及您在 GitHub 專案倉庫的 HTTPS 連結並選擇 Git 作為倉庫類型。
-#. 根據表格內容填寫的其它部分後，點擊 "Create]"。
+#. 根據表格內容填寫的其它部分後，點擊 "Create"。
 #. 在 GitHub 倉庫導覽列上，點擊 "Settings"。
-#. 在側欄中，點擊 "[Web Hooks & Services]"，然後找到 "ReadTheDocs" 點擊服務。
+#. 在側欄中，點擊 "Web Hooks & Services"，然後找到 "ReadTheDocs" 點擊服務。
 #. 檢查 "Active" 設定，然後 點擊 "Update Settings"。
 #. 完成以上操作後， commit 您的專案，以後只要您有編修將會自動更新。
 
