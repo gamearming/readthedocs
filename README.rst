@@ -12,7 +12,7 @@
 
 RTD 說明
 ---------------------
-有關專案設定請請詳閱 `Read the Docs 操作手冊`_ 中的完整說明。
+有關專案設定，請詳閱 `Read the Docs 操作手冊`_ 中的完整說明。
 
 貢獻
 ------------
@@ -35,7 +35,7 @@ GitHub 專案快速託管入門
 .. _Read the docs: http://readthedocs.org/
 .. _Read the Docs 註冊會員: https://readthedocs.org/accounts/signup/
 .. _Read the Docs 專案管理: https://readthedocs.org/dashboard/
-.. _Read the Docs 操作手冊: https://docs.readthedocs.io/
+.. _Read the Docs 操作手冊: https://readthedocs-1.rtfd.io/ 
 .. _Sphinx: http://sphinx.pocoo.org/
 .. _reStructuredText: http://sphinx.pocoo.org/rest.html
 .. _Subversion: http://subversion.tigris.org/
