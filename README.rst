@@ -35,7 +35,9 @@ GitHub 專案快速託管入門
 .. _Read the docs: http://readthedocs.org/
 .. _Read the Docs 註冊會員: https://readthedocs.org/accounts/signup/
 .. _Read the Docs 專案管理: https://readthedocs.org/dashboard/
-.. _Read the Docs 操作手冊: https://docs.readthedocs.io/zh_TW/latest/
+.. _Read the Docs 英文操作手冊: https://docs.readthedocs.io
+.. _Read the Docs 操作手冊: http://readthedocs-1.readthedocs.io/zh_TW/latest/
+
 .. _Sphinx: http://sphinx.pocoo.org/
 .. _reStructuredText: http://sphinx.pocoo.org/rest.html
 .. _Subversion: http://subversion.tigris.org/
