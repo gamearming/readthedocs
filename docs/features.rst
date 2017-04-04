@@ -1,16 +1,15 @@
-`Read the Docs`_ 功能
+Read the Docs 功能
 ======================
-
-This will serve as a list of all of the features that Read the Docs currently has. Some features are important enough to have their own page in the docs, others will simply be listed here.
-本文件將作為 Read the Docs 所有功能清單。
-在文件管理中大多數都必須擁有自己說明頁面，其它功能可能在此列出作為連結頁面。
+本文件是 `Read the Docs`_ 所有功能的說明文件。
+文件管理中大多數都必須擁有自己說明頁面，您應儘可能的將其功能說明連結頁面，在此列出。
 
 整合 `GitHub`_ 和 `Bitbucket`_ 版本管理器
 --------------------------------
-
-We now support linking by default in the sidebar. It links to the page on your host, which should help people quickly update typos and send pull requests to contribute to project documentation.
+目前預設側欄支援連結到您託管主機頁面，應該更能有效的協助 pull 專案或貢獻的人，更快速的得到需求。
 
 More information can be found in the :doc:`vcs` page.
+更多資訊，請參閱： :doc:`vcs` 頁面。
+更多資訊，請參閱： :doc:`vcs` page.
 
 Auto-updating
 -------------
@@ -69,5 +68,6 @@ Alternate Domains
 
 We provide support for CNAMEs, subdomains, and a shorturl for your project as well. This is outlined in the :doc:`alternate_domains` section.
 
-.. _GitHub: http://github.com/rtfd/readthedocs.org
+.. _Read the docs: http://readthedocs.org/
+.. _GitHub: https://github.com
 .. _bitbucket: https://bitbucket.org/
