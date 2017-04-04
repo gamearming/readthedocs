@@ -1,14 +1,8 @@
-Welcome to Read The Docs
+歡迎來到 Read The Docs
 ========================
 託管於開源社區的 `Read the Docs`_。它支援使用 reStructuredText_ 編輯的 Sphinx_ 文件，您可以從 Subversion_、 Bazaar_、Git_ 和 Mercurial_ 倉庫中 pull，重新編輯後再交回託管，將其視為持續文件。
 
-`Read the Docs`_ hosts documentation for the open source community.
-We support Sphinx_ docs written with reStructuredText_ and `CommonMark`_.
-We pull your code from your Subversion_, Bazaar_, Git_, and Mercurial_ repositories.
-Then we build documentation and host it for you.
-Think of it as *Continuous Documentation*.
-
-The code is open source, and `available on GitHub`_.
+這是可以使用在 `GitHub`_ 上開源的程式碼。
 
 .. _Read the docs: http://readthedocs.org/
 .. _Sphinx: http://sphinx.pocoo.org/
@@ -19,15 +13,15 @@ The code is open source, and `available on GitHub`_.
 .. _Bazaar: http://bazaar.canonical.com/
 .. _Git: http://git-scm.com/
 .. _Mercurial: https://www.mercurial-scm.org/
-.. _available on GitHub: http://github.com/rtfd/readthedocs.org
+.. _GitHub: http://github.com/rtfd/readthedocs.org
 
-The main documentation for the site is organized into a couple sections:
+網站的主要文件分為幾個部分︰
 
 * :ref:`user-docs`
 * :ref:`feature-docs`
 * :ref:`about-docs`
 
-Information about development is also available:
+關於開發資訊也可以使用︰
 
 * :ref:`dev-docs`
 * :ref:`design-docs`
