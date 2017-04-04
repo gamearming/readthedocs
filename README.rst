@@ -46,6 +46,7 @@ GitHub 專案快速託管入門
 .. _Mercurial: https://www.mercurial-scm.org/
 .. _GitHub: http://github.com/rtfd/readthedocs.org
 .. _貢獻說明: http://docs.readthedocs.io/en/latest/contribute.html#contributing-to-development
+.. _我的 GitHub: https://github.com/gamearming/readthedocs.git
 
 .. |build-status_en| image:: https://img.shields.io/travis/rtfd/readthedocs.org.svg?style=flat
     :alt: build status
