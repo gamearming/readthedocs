@@ -30,7 +30,7 @@ GitHub 專案快速託管入門
 #. 在 GitHub 倉庫導覽列上，點擊 "Settings"。
 #. 在側欄中，點擊 "Web Hooks & Services"，然後找到 "ReadTheDocs" 點擊服務。
 #. 檢查 "Active" 設定，然後 點擊 "Update Settings"。
-#. 完成以上操作後， commit 您的專案，以後只要您有編修將會自動更新。
+#. 完成以上操作後，commit 您的專案後，只要您有編修文件則會自動更新電子書。
 
 .. _Read the docs: http://readthedocs.org/
 .. _Read the Docs 註冊會員: https://readthedocs.org/accounts/signup/
