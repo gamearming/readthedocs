@@ -30,9 +30,9 @@
 
 .. toctree::
    :maxdepth: 2
-   :caption: User Documentation
-
-   getting_started
+   :caption: 使用者文件
+   
+   getting_started
    versions
    builds
    features
