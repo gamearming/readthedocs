@@ -10,12 +10,12 @@ Read the Docs 功能
 
 自動更新
 -------------
-The :doc:`webhooks` page talks about the different ways you can ping RTD to let us know your project has been updated. We have official support for GitHub, and anywhere else we have a generic post-commit hook that allows you to POST to a URL to get your documentation built.
+在 :doc:`webhooks` 說明頁中，提到您可以 ping RTD 的不同方式通知我們您的專案已經更新。
+我們對 `GitHub`_ 有正式的支援，也提供其他未支援的網站使用通用的 post-commit，來 POST 到指定的 URL 獲取您的文件。
 
 國際化
 --------------------
-Read the Docs itself is localized, and we support documentation translated into multiple languages. Read more on the :doc:`localization` and :doc:`i18n` pages.
-
+`Read the Docs`_ 可支援多種語系，更多資訊，請參閱： :doc:`localization` 和 :doc:`i18n` 說明。
 網址規範
 --------------
 
