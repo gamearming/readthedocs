@@ -21,7 +21,7 @@
 * :ref:`feature-docs`
 * :ref:`about-docs`
 
-關於開發資訊也可以使用︰
+關於開發資訊︰
 
 * :ref:`dev-docs`
 * :ref:`design-docs`
@@ -112,7 +112,7 @@
 
 .. toctree::
    :maxdepth: 2
-   :caption: 自訂安裝文件
+   :caption: 自訂安裝說明
 
    custom_installs/index
 
@@ -120,7 +120,7 @@
 
 .. toctree::
    :maxdepth: 2
-   :caption: 設計師文件
+   :caption: 工程師手冊
 
    design
    theme
