@@ -47,7 +47,7 @@
 
 .. toctree::
    :maxdepth: 2
-   :caption: About Read the Docs
+   :caption: 關於 Read the Docs
 
    contribute
    team
@@ -64,7 +64,7 @@
 .. toctree::
    :maxdepth: 2
    :glob:
-   :caption: Feature Documentation
+   :caption: 功能文件
 
    webhooks
    badges
