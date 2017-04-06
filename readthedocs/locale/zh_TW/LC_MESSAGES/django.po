@@ -151,7 +151,7 @@ msgstr "詳細名稱"
 #: builds/models.py:69 oauth/models.py:41 projects/filters.py:48
 #: projects/models.py:87 projects/models.py:843
 msgid "Slug"
-msgstr "縮略名稱稱"
+msgstr "縮略名稱"
 
 #: builds/models.py:72
 msgid "Supported"
@@ -1352,7 +1352,7 @@ msgstr "詳細名稱"
 #: builds/models.py:69 oauth/models.py:41 projects/filters.py:48
 #: projects/models.py:87 projects/models.py:843
 msgid "Slug"
-msgstr "縮略名稱稱"
+msgstr "縮略名稱"
 
 #: builds/models.py:72
 msgid "Supported"
@@ -2410,7 +2410,7 @@ msgstr "詳細資訊"
 #: templates/socialaccount/connections.html:6
 #: templates/socialaccount/connections.html:8
 msgid "Connected Services"
-msgstr "連接的服務"
+msgstr "連接服務"
 
 #: templates/profiles/base_profile_edit.html:52
 msgid "Gold"
