@@ -635,6 +635,11 @@ msgstr "\n您確定要取消訂購嗎？"
 msgid "Cancel subscription"
 msgstr "取消訂購"
 
+#: gold/templates/gold/subscription_form.html:7
+msgid "Read the Docs Gold"
+msgstr "Read the Docs 金牌會員"
+
+
 #: gold/templates/gold/subscription_detail.html:7
 #: gold/templates/gold/subscription_detail.html:31
 msgid "Gold Subscription"
@@ -699,7 +704,11 @@ msgid ""
 "      If you aren't able to do that,\n"
 "      we suggest giving at least $20/month to help cover our support and operations costs.\n"
 "    "
-msgstr "\n如果您是使用 Read The Docs 公司，請考慮簽訂 <a href=\"HTTPs://Read The Docs.com/services/#open-source-support\"> 商業支援合同</a>。\n如果不行，也可以選擇每月支付 20 美元，幫助我們支付營運成本，並為您提供更好的產品體驗。"
+msgstr ""
+"\n".
+"如果您是使用 Read The Docs 公司，請考慮簽訂 <a href=\"HTTPs://Read The Docs.com/services/#open-source-support\"> 商業支援合同</a>。\n"
+"如果不行，也可以選擇每月支付 20 美元，幫助我們支付營運成本，並為您提供更好的產品體驗。"
+"    "
 
 #: gold/templates/gold/subscription_form.html:63
 msgid ""
@@ -2271,7 +2280,7 @@ msgstr "連接的服務"
 
 #: templates/profiles/base_profile_edit.html:52
 msgid "Gold"
-msgstr "金牌"
+msgstr "金牌會員"
 
 #: templates/profiles/private/create_profile.html:5
 #: templates/profiles/private/create_profile.html:10
