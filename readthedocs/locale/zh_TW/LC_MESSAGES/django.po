@@ -672,6 +672,10 @@ msgstr "\n您可以採用  %(projects)s 專案訂購。"
 msgid "Select Projects"
 msgstr "選擇專案"
 
+#: gold/templates/gold/subscription_form.html:37
+msgid "Read the Docs Gold"
+msgstr "Read the Docs 金牌會員"
+
 #: gold/templates/gold/subscription_form.html:40
 msgid ""
 "\n"
@@ -679,7 +683,7 @@ msgid ""
 "      Your money will go directly to maintenance and development of the\n"
 "      product.\n"
 "    "
-msgstr "\n支援 Read the Docs 可以讓我們更多地了解人們喜愛的功能。\n您的捐贈將直接用於產品的維護和開發。"
+msgstr "\n支援 Read the Docs 可以讓我們更多地了解人們喜愛的功能。\n您的捐贈都將用於產品的維護與開發。"
 
 #: gold/templates/gold/subscription_form.html:47
 msgid ""
