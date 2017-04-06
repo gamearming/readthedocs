@@ -2267,16 +2267,16 @@ msgstr "詳細資訊"
 #: templates/socialaccount/connections.html:6
 #: templates/socialaccount/connections.html:8
 msgid "Connected Services"
-msgstr "連接的服務"
+msgstr "連接服務"
 
 #: templates/profiles/base_profile_edit.html:52
 msgid "Gold"
-msgstr "金牌"
+msgstr "金牌會員"
 
 #: templates/profiles/private/create_profile.html:5
 #: templates/profiles/private/create_profile.html:10
 msgid "Create your profile"
-msgstr "建立您的資料"
+msgstr "建立您的個人設定"
 
 #: templates/profiles/private/create_profile.html:16
 msgid "Create it!"
