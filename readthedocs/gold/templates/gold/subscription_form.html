@@ -43,13 +43,13 @@ $(document).ready(function () {
       product.
     {% endblocktrans %}
   </p>
-    <p>
+  <p>
     {% blocktrans %}
       If you are an individual,
       feel free to give whatever feels right for the value you get out of Read the Docs.
     {% endblocktrans %}
-    </p>
-    <p>
+  </p>
+  <p>
     {% blocktrans %}
       If you are a company using Read the Docs,
       please consider getting a <a href="https://readthedocs.com/services/#open-source-support">commercial support contract</a>.
@@ -58,7 +58,7 @@ $(document).ready(function () {
       If you aren't able to do that,
       we suggest giving at least $20/month to help cover our support and operations costs.
     {% endblocktrans %}
-    </p>
+  </p>
   <p>
     {% blocktrans %}
       You can also make one-time donations on our <a href="https://readthedocs.org/sustainability/">sustainability</a> page.
@@ -76,7 +76,7 @@ $(document).ready(function () {
 
   <p>
     You are currently using {{ domains.count }} domains:
-    
+
     <ul class="donate-about">
     {% for domain in domains %}
       <li>{{ domain.domain }} ({{ domain.project.name }})</li>
